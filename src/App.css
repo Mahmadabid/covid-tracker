@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dark {
+  background-color: black ;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.darks {
+  background-color: rgb(20, 117, 121) !important; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.darkend {
+  color:rgb(255, 255, 255) !important;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  color:white;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.country {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 615px) {
+  .container{
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+@media only screen and (min-width: 616px) {
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }  
+}
+
+.selector {
+ 
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.style {
+  border-bottom: 8px Blue solid;
+  border-top: 8px Blue solid;
+  color: Blue;
+  border-left: 1px Blue solid;
+  border-right: 1px Blue solid;
+}
+.style1 {
+  border-bottom: 8px Red solid;
+  border-top: 8px Red solid;
+  color: Red;
+  border-left: 1px Red solid;
+  border-right: 1px Red solid;
+}
+.style2 {
+  border-bottom: 8px Green solid;
+  border-top: 8px Green solid;
+  color: Green;
+  border-left: 1px Green solid;
+  border-right: 1px Green solid;
+}
+.style3 {
+  border-bottom: 8px purple solid;
+  border-top:  8px purple solid;
+  color: purple;
+  border-left: 1px purple solid;
+  border-right: 1px purple solid;
 }
