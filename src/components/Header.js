@@ -19,19 +19,27 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     fontWeight: 'bold'
   },
+  color: {
+    backgroundColor: 'hsl(227deg 22% 20%)',
+  },
 }));
 
 export default function Header() {
   const classes = useStyles();
   const Light = useContext(ThemeButton);
+  const themeHandle = () => {
+    Light[1](!Light[0]);
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  };
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={Light[0] ? '' : 'darks'}>
+      <AppBar position="static" className={Light[0]? '': classes.color}>
         <Toolbar>
           <Typography variant="h5" className={classes.title}>
             Covid-19 Tracker
-            <button className="btn" onClick={() => { Light[1](!Light[0]) }}>{Light[0] ? <Brightness4Icon /> : <Brightness7Icon />}</button>
+            <button className="btn" onClick={() => { themeHandle() }}>{Light[0] ? <Brightness4Icon /> : <Brightness7Icon />}</button>
           </Typography>
         </Toolbar>
       </AppBar>

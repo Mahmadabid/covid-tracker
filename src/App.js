@@ -12,7 +12,7 @@ function App() {
   return (
     <ThemeButton.Provider value={islit}>
       <Globalbar.Provider value={Global}>
-      <div className={islit[0]?'':'dark'}>
+      <div className={islit[0]?'':'dark-mode'}>
         <div>
           <Header />
         </div>

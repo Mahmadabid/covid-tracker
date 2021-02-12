@@ -1,10 +1,11 @@
-.dark {
-  background-color: black ;
+
+.dark-mode {
+  background-color: hsl(226, 23%, 11%);
   color: white;
 }
 
-.darks {
-  background-color: rgb(20, 117, 121) !important; 
+.color {
+  background-color: hsl(227deg 22% 20%);
 }
 
 .darkend {
